@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manold</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
+</head>
+<body class="container full-height-grow">
+    <header class="main-header">
+        <a href="/" class="brand-logo">
+        <h1 class="animated infinite heartBeat">Manold</h1>
+ <div class="brand-logo-name">KHS</div>
+    </a>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"
+                    style="background-image: url(imgfolder/infrastructure.jpg);">
+                </div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">
+                <p>infrastructure</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"
+                    style="background-image: url(imgfolder/transportation.jpg);">
+                </div>
+                <div class="img-text-wrapper">
+                    <div class="subtitle">
+                     <p>Transportation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"
+                    style="background-image: url(imgfolder/social-media.jpg);">
+                   
+                </div>
+                <div class="img-text-wrapper">
+                    
+                   
+                    <div class="subtitle">
+                       <p>Social Media Interaction</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"
+                    style="background-image: url(imgfolder/partners.jpg);">
+                </div>
+                <div class="img-text-wrapper">
+                  
+                   
+                    <div class="subtitle">
+                     <p>Buisness Partners</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"
+                    style="background-image: url(imgfolder/foreign-investors.jpg);">
+                </div>
+                <div class="img-text-wrapper">
+                   
+                   
+                    <div class="subtitle">
+                       <p>foreign Investors</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"
+                    style="background-image: url(imgfolder/nursery.jpg);">
+                </div>
+                <div class="img-text-wrapper">
+                   
+                    <div class="subtitle">
+                      <p>Nurseries</p>
+            
+                    </div>
+                </div>
+            </div>
+
+           
+
+    </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+           <nav class="footer-nav">
+               <ul><li><a href="#"> Sign In</a>
+                </li>
+               <li><a href="#">Sign Out</a></li></ul>
+
+           </nav>
+           <nav class="footer-nav">
+            <ul>
+                <li><a href="#" class="social=link"> 
+                <img src="imgfolder/icons8-twitter.svg" alt="">Twitter
+            </a>
+             </li>
+             <li><a href="#" class="social=link"> 
+                <img src="imgfolder/icons8-facebook.svg" alt="">Facebook
+            </a>
+             </li>
+             
+            
+            </ul>
+            
+
+        </nav>
+        </div>
+    </footer>
+<div class="home-page-circle1"></div>
+<div class="home-page-circle2"></div>
+<div class="home-page-circle3"></div>
+    
+
+
+
+    
+
+
+    
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
